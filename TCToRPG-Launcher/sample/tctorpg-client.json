@@ -1,0 +1,13 @@
+{
+  "server": {
+    "name": "TCToRPG",
+    "host": "220.89.226.110",
+    "port": 25565
+  },
+  "hud": {
+    "enabled": true
+  },
+  "resourcePack": {
+    "enabled": true
+  }
+}

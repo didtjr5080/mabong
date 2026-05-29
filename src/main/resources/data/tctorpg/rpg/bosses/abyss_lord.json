@@ -1,0 +1,40 @@
+{
+  "id": "abyss_lord",
+  "name": "Abyss Lord",
+  "entity_type": "minecraft:wither_skeleton",
+  "level": 40,
+  "stats": {
+    "max_hp": 5000,
+    "physical_attack": 120,
+    "magic_attack": 80,
+    "defense": 60,
+    "magic_resist": 45
+  },
+  "patterns": [
+    {
+      "trigger": {
+        "type": "interval_seconds",
+        "seconds": 10
+      },
+      "action": {
+        "type": "area_damage",
+        "radius": 6,
+        "damage": {
+          "type": "magic",
+          "base": 80,
+          "scale": {
+            "magic": 1.0
+          }
+        },
+        "effects": [
+          {
+            "type": "bleed",
+            "chance": 0.5,
+            "duration_ticks": 120,
+            "power": 15
+          }
+        ]
+      }
+    }
+  ]
+}

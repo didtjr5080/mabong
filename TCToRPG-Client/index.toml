@@ -1,0 +1,16 @@
+hash-format = "sha256"
+
+[[files]]
+file = "mods/tctorpg.jar"
+hash = ""
+metafile = false
+
+[[files]]
+file = "resourcepacks/TCToRPG-Resources.zip"
+hash = ""
+metafile = false
+
+[[files]]
+file = "minecraft/servers.dat"
+hash = ""
+metafile = false

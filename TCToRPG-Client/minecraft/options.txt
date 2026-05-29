@@ -1,0 +1,1 @@
+﻿resourcePacks:["vanilla","file/TCToRPG-Resources.zip"]

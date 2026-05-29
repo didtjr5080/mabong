@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+issueTrackerURL=""
+
+[[mods]]
+modId="tctorpg"
+version="0.1.0"
+displayName="TCToRPG"
+displayURL=""
+logoFile=""
+credits=""
+authors=""
+description="Server-authoritative action RPG system."
+
+[[dependencies.tctorpg]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.21.1,1.22)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.tctorpg]]
+modId="neoforge"
+mandatory=true
+versionRange="[21.1,22)"
+ordering="NONE"
+side="BOTH"

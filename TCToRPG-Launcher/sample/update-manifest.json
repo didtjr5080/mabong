@@ -1,0 +1,36 @@
+{
+  "launcherVersion": "0.1.0",
+  "clientVersion": "0.1.0",
+  "minecraftVersion": "1.20.1",
+  "loader": "fabric",
+  "loaderVersion": "0.15.11",
+  "server": {
+    "name": "TCToRPG",
+    "host": "220.89.226.110",
+    "port": 25565
+  },
+  "notice": {
+    "title": "TCToRPG 런처 테스트 버전",
+    "body": "TCToRPG 서버 접속 주소는 220.89.226.110:25565 입니다. 업데이트 후 Minecraft를 실행하고 멀티플레이 서버 주소에 입력하세요."
+  },
+  "files": [
+    {
+      "path": "mods/tctorpg-client.jar",
+      "url": "https://example.com/tctorpg/mods/tctorpg-client.jar",
+      "sha256": "PUT_SHA256_HERE",
+      "required": true
+    },
+    {
+      "path": "resourcepacks/tctorpg-resourcepack.zip",
+      "url": "https://example.com/tctorpg/resourcepacks/tctorpg-resourcepack.zip",
+      "sha256": "PUT_SHA256_HERE",
+      "required": true
+    },
+    {
+      "path": "config/tctorpg-client.json",
+      "url": "https://example.com/tctorpg/config/tctorpg-client.json",
+      "sha256": "PUT_SHA256_HERE",
+      "required": true
+    }
+  ]
+}

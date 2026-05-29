@@ -1,0 +1,11 @@
+{
+  "id": "default",
+  "name": "TCToRPG Default Content",
+  "version": "1.0.0",
+  "enabled": true,
+  "priority": 0,
+  "authors": [
+    "TCToRPG Team"
+  ],
+  "description": "기본 직업, 스킬, 몬스터, 보스, 퀘스트, 상점 데이터를 제공하는 기본 콘텐츠 팩입니다."
+}

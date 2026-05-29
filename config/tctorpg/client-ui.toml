@@ -1,0 +1,19 @@
+[hud]
+enable_skill_hud = true
+skill_hud_x = 20
+skill_hud_y = 180
+show_cooldown_numbers = true
+show_resource_bars = true
+
+[keybinds]
+default_skill_1 = "key.keyboard.r"
+default_skill_2 = "key.keyboard.z"
+default_skill_3 = "key.keyboard.x"
+default_skill_4 = "key.keyboard.c"
+default_skill_5 = "key.keyboard.v"
+default_ultimate = "key.keyboard.g"
+default_dash = "key.keyboard.left.alt"
+default_screen_skills = "key.keyboard.k"
+default_screen_stats = "key.keyboard.j"
+default_screen_equip = "key.keyboard.b"
+default_screen_quest = "key.keyboard.l"

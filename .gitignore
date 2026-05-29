@@ -1,0 +1,51 @@
+# Gradle
+.gradle/
+build/
+out/
+
+# IntelliJ / VSCode
+.idea/
+.vscode/
+*.iml
+
+# Java
+*.class
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# Minecraft server runtime
+dist/
+run/
+server/
+world/
+world_nether/
+world_the_end/
+logs/
+crash-reports/
+session.lock
+usercache.json
+banned-players.json
+banned-ips.json
+ops.json
+whitelist.json
+
+# Launcher build outputs
+TCToRPG-Launcher/build/
+TCToRPG-Launcher/dist/
+TCToRPG-Launcher/*.spec
+*.exe
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Minecraft generated client files
+TCToRPG-Client/minecraft/servers.dat

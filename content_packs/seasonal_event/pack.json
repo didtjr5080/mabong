@@ -1,0 +1,11 @@
+{
+  "id": "seasonal_event",
+  "name": "시즌 이벤트",
+  "version": "1.0.0",
+  "enabled": false,
+  "priority": 20,
+  "authors": [
+    "TCToRPG Team"
+  ],
+  "description": "시즌 한정 몬스터, 아이템, 퀘스트, 상점을 추가합니다."
+}

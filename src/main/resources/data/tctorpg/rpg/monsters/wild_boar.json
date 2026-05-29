@@ -1,0 +1,21 @@
+{
+  "id": "wild_boar",
+  "entity_type": "minecraft:hoglin",
+  "level": 5,
+  "stats": {
+    "max_hp": 180,
+    "physical_attack": 18,
+    "magic_attack": 0,
+    "defense": 5,
+    "magic_resist": 2
+  },
+  "exp": 35,
+  "drops": [
+    {
+      "item": "tctorpg:boar_hide",
+      "chance": 0.35,
+      "min": 1,
+      "max": 2
+    }
+  ]
+}

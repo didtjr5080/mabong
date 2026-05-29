@@ -1,0 +1,22 @@
+{
+  "id": "iron_greatsword",
+  "name": "Iron Greatsword",
+  "type": "equipment",
+  "slot": "weapon",
+  "weapon_type": "greatsword",
+  "rarity": "common",
+  "requirements": {
+    "level": 8,
+    "jobs": ["tctorpg:warrior", "tctorpg:knight", "tctorpg:berserker"],
+    "tier": 0,
+    "stats": {
+      "str": 18
+    }
+  },
+  "stats": {
+    "physical_attack": 24,
+    "str": 3,
+    "crit_damage": 10
+  },
+  "effects": []
+}

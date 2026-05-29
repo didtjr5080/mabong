@@ -1,0 +1,25 @@
+[general]
+enable_debug_log = false
+default_character_slots = 4
+max_skill_slots = 6
+max_accessory_slots = 3
+
+[leveling]
+max_level = 50
+stat_points_per_level = 3
+bonus_points_every_10_levels = 5
+
+[combat]
+enable_custom_damage = true
+minimum_damage = 1.0
+base_crit_damage_multiplier = 1.5
+enable_evasion = true
+enable_vanilla_damage_cancel = true
+
+[equipment]
+requirements_use_base_stats_only = true
+allow_negative_stats = true
+
+[skills]
+global_cooldown_ticks = 10
+allow_skill_cast_while_stunned = false

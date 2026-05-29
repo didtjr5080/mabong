@@ -1,0 +1,15 @@
+{
+  "mod.tctorpg.name": "TCToRPG",
+  "key.categories.tctorpg": "TCToRPG",
+  "key.tctorpg.skill1": "Skill Slot 1",
+  "key.tctorpg.skill2": "Skill Slot 2",
+  "key.tctorpg.skill3": "Skill Slot 3",
+  "key.tctorpg.skill4": "Skill Slot 4",
+  "key.tctorpg.skill5": "Skill Slot 5",
+  "key.tctorpg.ultimate": "Ultimate",
+  "key.tctorpg.dash": "Dash / Evasion",
+  "key.tctorpg.screen_skills": "Open Skill Equip",
+  "key.tctorpg.screen_stats": "Open Stats",
+  "key.tctorpg.screen_equip": "Open Equipment",
+  "key.tctorpg.screen_quest": "Open Quest"
+}
