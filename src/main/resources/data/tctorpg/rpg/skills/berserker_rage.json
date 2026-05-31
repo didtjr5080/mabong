@@ -1,0 +1,15 @@
+{
+  "id": "berserker_rage",
+  "name": "Berserker Rage",
+  "job_required": "tctorpg:berserker",
+  "level_required": 30,
+  "tier_required": 2,
+  "slot_type": "ultimate",
+  "cooldown_ticks": 560,
+  "resource": { "type": "stamina", "cost": 40 },
+  "damage": { "type": "physical", "base": 145, "scale": { "attack": 2.4, "magic": 0.0 } },
+  "range": 4.0,
+  "radius": 2.5,
+  "effects": [{ "id": "bleed", "duration_ticks": 160, "amplifier": 2 }],
+  "visual": { "particle": "minecraft:sweep_attack", "sound": "minecraft:entity.player.attack.sweep" }
+}

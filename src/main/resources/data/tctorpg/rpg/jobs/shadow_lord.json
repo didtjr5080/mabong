@@ -1,0 +1,6 @@
+{
+  "id": "shadow_lord",
+  "name": "Shadow Lord",
+  "tier": 2,
+  "parent": "tctorpg:assassin"
+}

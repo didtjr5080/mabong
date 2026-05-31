@@ -1,0 +1,6 @@
+{
+  "id": "blood_king",
+  "name": "Blood King",
+  "tier": 2,
+  "parent": "tctorpg:blood_sorcerer"
+}

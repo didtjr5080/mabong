@@ -1,0 +1,1 @@
+{"id":"skill_blood_chain","name":"Blood Chain Training","type":"skill","rewards":[{"type":"exp","amount":50},{"type":"skill","skill_id":"blood_chain"}],"repeatable":false}

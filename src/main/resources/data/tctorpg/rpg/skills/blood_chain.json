@@ -1,0 +1,15 @@
+{
+  "id": "blood_chain",
+  "name": "Blood Chain",
+  "job_required": "tctorpg:blood_mage",
+  "level_required": 3,
+  "tier_required": 0,
+  "slot_type": "normal",
+  "cooldown_ticks": 130,
+  "resource": { "type": "mana", "cost": 15 },
+  "damage": { "type": "magic", "base": 42, "scale": { "attack": 0.0, "magic": 1.2 } },
+  "range": 5.0,
+  "radius": 1.0,
+  "effects": [{ "id": "slow", "duration_ticks": 80, "amplifier": 1 }],
+  "visual": { "particle": "minecraft:damage_indicator", "sound": "minecraft:entity.evoker.cast_spell" }
+}

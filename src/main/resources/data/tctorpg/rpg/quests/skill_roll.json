@@ -1,0 +1,1 @@
+{"id":"skill_roll","name":"Roll Training","type":"skill","rewards":[{"type":"exp","amount":25},{"type":"skill","skill_id":"roll"}],"repeatable":false}

@@ -1,0 +1,15 @@
+{
+  "id": "intimidation",
+  "name": "Intimidation",
+  "job_required": "tctorpg:assassin",
+  "level_required": 15,
+  "tier_required": 1,
+  "slot_type": "normal",
+  "cooldown_ticks": 200,
+  "resource": { "type": "stamina", "cost": 16 },
+  "damage": { "type": "physical", "base": 35, "scale": { "attack": 0.8, "magic": 0.0 } },
+  "range": 4.0,
+  "radius": 2.0,
+  "effects": [{ "id": "fear", "duration_ticks": 80, "amplifier": 1 }],
+  "visual": { "particle": "minecraft:witch", "sound": "minecraft:entity.evoker.prepare_summon" }
+}

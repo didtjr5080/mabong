@@ -1,0 +1,1 @@
+{"id":"skill_rage_strike","name":"Rage Strike Trial","type":"skill","rewards":[{"type":"exp","amount":300},{"type":"skill","skill_id":"rage_strike"}],"repeatable":false}

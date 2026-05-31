@@ -1,0 +1,1 @@
+{"id":"skill_lifesteal","name":"Lifesteal Training","type":"skill","rewards":[{"type":"exp","amount":180},{"type":"skill","skill_id":"lifesteal"}],"repeatable":false}

@@ -1,0 +1,1 @@
+{"id":"skill_holy_judgement","name":"Holy Judgement Trial","type":"skill","rewards":[{"type":"exp","amount":400},{"type":"skill","skill_id":"holy_judgement"}],"repeatable":false}

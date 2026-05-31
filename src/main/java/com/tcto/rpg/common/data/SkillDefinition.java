@@ -2,6 +2,9 @@ package com.tcto.rpg.common.data;
 
 import com.google.gson.JsonObject;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class SkillDefinition {
     private final String id;
     private final String name;
@@ -15,10 +18,16 @@ public class SkillDefinition {
     private final double damageBase;
     private final double scaleAttack;
     private final double scaleMagic;
+    private final double range;
+    private final double radius;
+    private final String particle;
+    private final String sound;
+    private final List<SkillEffect> effects;
 
     public SkillDefinition(String id, String name, String jobRequired, int levelRequired, int tierRequired,
                            String slotType, int cooldownTicks, String resourceType, int resourceCost,
-                           double damageBase, double scaleAttack, double scaleMagic) {
+                           double damageBase, double scaleAttack, double scaleMagic, double range, double radius,
+                           String particle, String sound, List<SkillEffect> effects) {
         this.id = id;
         this.name = name;
         this.jobRequired = jobRequired;
@@ -31,6 +40,11 @@ public class SkillDefinition {
         this.damageBase = damageBase;
         this.scaleAttack = scaleAttack;
         this.scaleMagic = scaleMagic;
+        this.range = range;
+        this.radius = radius;
+        this.particle = particle;
+        this.sound = sound;
+        this.effects = List.copyOf(effects);
     }
 
     public static SkillDefinition fromJson(String id, JsonObject json) {
@@ -45,6 +59,11 @@ public class SkillDefinition {
         double damageBase = 0.0;
         double scaleAttack = 0.0;
         double scaleMagic = 0.0;
+        double range = json.has("range") ? json.get("range").getAsDouble() : 3.0;
+        double radius = json.has("radius") ? json.get("radius").getAsDouble() : 0.0;
+        String particle = "";
+        String sound = "";
+        List<SkillEffect> effects = new ArrayList<>();
         if (json.has("damage")) {
             JsonObject damage = json.getAsJsonObject("damage");
             damageBase = damage.has("base") ? damage.get("base").getAsDouble() : 0.0;
@@ -54,8 +73,25 @@ public class SkillDefinition {
                 scaleMagic = scale.has("magic") ? scale.get("magic").getAsDouble() : 0.0;
             }
         }
+        if (json.has("visual") && json.get("visual").isJsonObject()) {
+            JsonObject visual = json.getAsJsonObject("visual");
+            particle = visual.has("particle") ? visual.get("particle").getAsString() : "";
+            sound = visual.has("sound") ? visual.get("sound").getAsString() : "";
+        }
+        if (json.has("effects") && json.get("effects").isJsonArray()) {
+            for (var element : json.getAsJsonArray("effects")) {
+                if (!element.isJsonObject()) {
+                    continue;
+                }
+                JsonObject effect = element.getAsJsonObject();
+                String effectId = effect.has("id") ? effect.get("id").getAsString() : "";
+                int durationTicks = effect.has("duration_ticks") ? effect.get("duration_ticks").getAsInt() : 60;
+                int amplifier = effect.has("amplifier") ? effect.get("amplifier").getAsInt() : 0;
+                effects.add(new SkillEffect(effectId, durationTicks, amplifier));
+            }
+        }
         return new SkillDefinition(id, name, jobRequired, levelRequired, tierRequired, slotType, cooldownTicks,
-            resourceType, resourceCost, damageBase, scaleAttack, scaleMagic);
+            resourceType, resourceCost, damageBase, scaleAttack, scaleMagic, range, radius, particle, sound, effects);
     }
 
     public String id() {
@@ -104,6 +140,29 @@ public class SkillDefinition {
 
     public double scaleMagic() {
         return scaleMagic;
+    }
+
+    public double range() {
+        return range;
+    }
+
+    public double radius() {
+        return radius;
+    }
+
+    public String particle() {
+        return particle;
+    }
+
+    public String sound() {
+        return sound;
+    }
+
+    public List<SkillEffect> effects() {
+        return effects;
+    }
+
+    public record SkillEffect(String id, int durationTicks, int amplifier) {
     }
 }
 

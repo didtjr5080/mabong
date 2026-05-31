@@ -1,0 +1,15 @@
+{
+  "id": "sword_wave",
+  "name": "Sword Wave",
+  "job_required": "tctorpg:knight",
+  "level_required": 15,
+  "tier_required": 1,
+  "slot_type": "normal",
+  "cooldown_ticks": 160,
+  "resource": { "type": "stamina", "cost": 20 },
+  "damage": { "type": "physical", "base": 60, "scale": { "attack": 1.4, "magic": 0.0 } },
+  "range": 6.0,
+  "radius": 1.2,
+  "effects": [],
+  "visual": { "particle": "minecraft:sonic_boom", "sound": "minecraft:entity.warden.sonic_boom" }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "rage_strike",
+  "name": "Rage Strike",
+  "job_required": "tctorpg:berserker",
+  "level_required": 30,
+  "tier_required": 2,
+  "slot_type": "normal",
+  "cooldown_ticks": 140,
+  "resource": { "type": "stamina", "cost": 18 },
+  "damage": { "type": "physical", "base": 80, "scale": { "attack": 2.0, "magic": 0.0 } },
+  "range": 3.0,
+  "radius": 1.5,
+  "effects": [{ "id": "bleed", "duration_ticks": 120, "amplifier": 1 }],
+  "visual": { "particle": "minecraft:sweep_attack", "sound": "minecraft:entity.player.attack.crit" }
+}

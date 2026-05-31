@@ -1,6 +1,7 @@
 package com.tcto.rpg.client.hud;
 
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.ListTag;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -175,6 +176,29 @@ public final class ClientRpgState {
         return character != null ? character.getInt("level") : 1;
     }
 
+    public static int exp() {
+        CompoundTag character = selectedCharacterTag();
+        return character != null ? character.getInt("exp") : 0;
+    }
+
+    public static int statPoints() {
+        CompoundTag character = selectedCharacterTag();
+        return character != null ? character.getInt("stat_points") : 0;
+    }
+
+    public static int jobTier() {
+        CompoundTag character = selectedCharacterTag();
+        return character != null ? character.getInt("job_tier") : 0;
+    }
+
+    public static int baseStat(String statId) {
+        CompoundTag character = selectedCharacterTag();
+        if (character == null || !character.contains("base_stats")) {
+            return 0;
+        }
+        return character.getCompound("base_stats").getInt(statId);
+    }
+
     public static String equippedSkillId(String slotKey) {
         CompoundTag character = selectedCharacterTag();
         if (character == null || !character.contains("equipped_skills")) {
@@ -182,6 +206,53 @@ public final class ClientRpgState {
         }
         CompoundTag equipped = character.getCompound("equipped_skills");
         return equipped.getString(slotKey);
+    }
+
+    public static String equipmentId(String slotKey) {
+        CompoundTag character = selectedCharacterTag();
+        if (character == null || !character.contains("equipment")) {
+            return "";
+        }
+        return character.getCompound("equipment").getString(slotKey);
+    }
+
+    public static List<String> unlockedSkills() {
+        List<String> values = new ArrayList<>();
+        CompoundTag character = selectedCharacterTag();
+        if (character == null || !character.contains("unlocked_skills")) {
+            return values;
+        }
+        ListTag unlocked = character.getList("unlocked_skills", 8);
+        for (int i = 0; i < unlocked.size(); i++) {
+            values.add(unlocked.getString(i));
+        }
+        return values;
+    }
+
+    public static List<String> completedQuests() {
+        List<String> values = new ArrayList<>();
+        CompoundTag character = selectedCharacterTag();
+        if (character == null || !character.contains("completed_quests")) {
+            return values;
+        }
+        ListTag completed = character.getList("completed_quests", 8);
+        for (int i = 0; i < completed.size(); i++) {
+            values.add(completed.getString(i));
+        }
+        return values;
+    }
+
+    public static List<String> activeQuests() {
+        List<String> values = new ArrayList<>();
+        CompoundTag character = selectedCharacterTag();
+        if (character == null || !character.contains("active_quests")) {
+            return values;
+        }
+        ListTag active = character.getList("active_quests", 8);
+        for (int i = 0; i < active.size(); i++) {
+            values.add(active.getString(i));
+        }
+        return values;
     }
 
     private static CompoundTag selectedCharacterTag() {

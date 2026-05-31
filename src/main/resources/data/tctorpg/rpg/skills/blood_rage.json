@@ -1,0 +1,15 @@
+{
+  "id": "blood_rage",
+  "name": "Blood Rage",
+  "job_required": "tctorpg:blood_king",
+  "level_required": 30,
+  "tier_required": 2,
+  "slot_type": "ultimate",
+  "cooldown_ticks": 600,
+  "resource": { "type": "mana", "cost": 40 },
+  "damage": { "type": "magic", "base": 145, "scale": { "attack": 0.5, "magic": 2.0 } },
+  "range": 5.0,
+  "radius": 3.0,
+  "effects": [{ "id": "blood_rage", "duration_ticks": 200, "amplifier": 2 }],
+  "visual": { "particle": "minecraft:damage_indicator", "sound": "minecraft:entity.wither.spawn" }
+}

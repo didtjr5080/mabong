@@ -1,0 +1,15 @@
+{
+  "id": "poison_kill",
+  "name": "Poison Kill",
+  "job_required": "tctorpg:poisoner",
+  "level_required": 30,
+  "tier_required": 2,
+  "slot_type": "ultimate",
+  "cooldown_ticks": 560,
+  "resource": { "type": "stamina", "cost": 34 },
+  "damage": { "type": "physical", "base": 120, "scale": { "attack": 2.0, "magic": 0.5 } },
+  "range": 3.0,
+  "radius": 2.5,
+  "effects": [{ "id": "poison", "duration_ticks": 200, "amplifier": 2 }],
+  "visual": { "particle": "minecraft:falling_spore_blossom", "sound": "minecraft:entity.spider.hurt" }
+}

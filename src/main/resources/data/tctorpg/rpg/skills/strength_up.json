@@ -1,0 +1,15 @@
+{
+  "id": "strength_up",
+  "name": "Strength Up",
+  "job_required": "tctorpg:warrior",
+  "level_required": 3,
+  "tier_required": 0,
+  "slot_type": "normal",
+  "cooldown_ticks": 240,
+  "resource": { "type": "stamina", "cost": 8 },
+  "damage": { "type": "physical", "base": 10, "scale": { "attack": 0.4, "magic": 0.0 } },
+  "range": 2.5,
+  "radius": 0.0,
+  "effects": [{ "id": "strength_up", "duration_ticks": 200, "amplifier": 1 }],
+  "visual": { "particle": "minecraft:crit", "sound": "minecraft:entity.player.attack.strong" }
+}

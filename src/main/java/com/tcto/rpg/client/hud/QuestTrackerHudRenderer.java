@@ -9,9 +9,16 @@ public final class QuestTrackerHudRenderer {
     public static void render(GuiGraphics guiGraphics) {
         int x = HudLayoutConfig.QUEST_X;
         int y = HudLayoutConfig.QUEST_Y;
-        guiGraphics.drawString(net.minecraft.client.Minecraft.getInstance().font, "Job: " + ClientRpgState.jobId(), x, y, 0xFFFFFF, true);
+        guiGraphics.drawString(net.minecraft.client.Minecraft.getInstance().font, "Job: " + shortJob(ClientRpgState.jobId()), x, y, 0xFFFFFF, true);
         guiGraphics.drawString(net.minecraft.client.Minecraft.getInstance().font, "Level: " + ClientRpgState.level(), x, y + 10, 0xFFFFFF, true);
         guiGraphics.drawString(net.minecraft.client.Minecraft.getInstance().font, "Quest: (placeholder)", x, y + 20, 0xAAAAAA, true);
+    }
+
+    private static String shortJob(String jobId) {
+        if (jobId == null || jobId.isBlank()) {
+            return "-";
+        }
+        return jobId.contains(":") ? jobId.substring(jobId.indexOf(':') + 1) : jobId;
     }
 }
 

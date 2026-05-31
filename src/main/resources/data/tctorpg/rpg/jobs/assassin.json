@@ -1,0 +1,6 @@
+{
+  "id": "assassin",
+  "name": "Assassin",
+  "tier": 1,
+  "parent": "tctorpg:rogue"
+}

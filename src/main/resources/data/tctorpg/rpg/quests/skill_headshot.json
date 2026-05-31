@@ -1,0 +1,1 @@
+{"id":"skill_headshot","name":"Headshot Trial","type":"skill","rewards":[{"type":"exp","amount":400},{"type":"skill","skill_id":"headshot"}],"repeatable":false}

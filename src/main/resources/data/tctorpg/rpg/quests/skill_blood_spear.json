@@ -1,0 +1,1 @@
+{"id":"skill_blood_spear","name":"Blood Spear Training","type":"skill","rewards":[{"type":"exp","amount":80},{"type":"skill","skill_id":"blood_spear"}],"repeatable":false}

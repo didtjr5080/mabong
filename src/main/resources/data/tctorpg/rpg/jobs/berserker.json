@@ -1,0 +1,6 @@
+{
+  "id": "berserker",
+  "name": "Berserker",
+  "tier": 2,
+  "parent": "tctorpg:knight"
+}

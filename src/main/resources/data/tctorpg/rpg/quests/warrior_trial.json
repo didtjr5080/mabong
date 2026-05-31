@@ -1,0 +1,26 @@
+{
+  "id": "warrior_trial",
+  "name": "Warrior Trial",
+  "type": "job",
+  "start_npc": "",
+  "complete_npc": "",
+  "prerequisites": [],
+  "objectives": [
+    {
+      "type": "talk",
+      "target": "trainer",
+      "amount": 1
+    }
+  ],
+  "rewards": [
+    {
+      "type": "exp",
+      "amount": 100
+    },
+    {
+      "type": "skill",
+      "skill_id": "sword_judgement"
+    }
+  ],
+  "repeatable": false
+}

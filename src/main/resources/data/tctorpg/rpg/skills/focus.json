@@ -1,0 +1,15 @@
+{
+  "id": "focus",
+  "name": "Focus",
+  "job_required": "tctorpg:ranger",
+  "level_required": 15,
+  "tier_required": 1,
+  "slot_type": "normal",
+  "cooldown_ticks": 220,
+  "resource": { "type": "stamina", "cost": 12 },
+  "damage": { "type": "physical", "base": 20, "scale": { "attack": 0.5, "magic": 0.0 } },
+  "range": 8.0,
+  "radius": 0.0,
+  "effects": [{ "id": "focus", "duration_ticks": 200, "amplifier": 1 }],
+  "visual": { "particle": "minecraft:enchant", "sound": "minecraft:block.enchantment_table.use" }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "lifesteal",
+  "name": "Lifesteal",
+  "job_required": "tctorpg:blood_sorcerer",
+  "level_required": 15,
+  "tier_required": 1,
+  "slot_type": "normal",
+  "cooldown_ticks": 180,
+  "resource": { "type": "mana", "cost": 22 },
+  "damage": { "type": "magic", "base": 65, "scale": { "attack": 0.0, "magic": 1.4 } },
+  "range": 5.0,
+  "radius": 1.5,
+  "effects": [{ "id": "lifesteal", "duration_ticks": 1, "amplifier": 1 }],
+  "visual": { "particle": "minecraft:heart", "sound": "minecraft:entity.evoker.prepare_attack" }
+}

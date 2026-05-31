@@ -10,6 +10,12 @@ public final class ClientUiConfig {
     public static final ModConfigSpec.IntValue SKILL_HUD_Y;
     public static final ModConfigSpec.BooleanValue SHOW_COOLDOWN_NUMBERS;
     public static final ModConfigSpec.BooleanValue SHOW_RESOURCE_BARS;
+    public static final ModConfigSpec.BooleanValue ENABLE_CUSTOM_CHAT;
+    public static final ModConfigSpec.BooleanValue HIDE_VANILLA_CHAT;
+    public static final ModConfigSpec.IntValue CHAT_X;
+    public static final ModConfigSpec.IntValue CHAT_Y;
+    public static final ModConfigSpec.IntValue CHAT_WIDTH;
+    public static final ModConfigSpec.IntValue CHAT_LINES;
 
     public static final ModConfigSpec.ConfigValue<String> DEFAULT_SKILL_1;
     public static final ModConfigSpec.ConfigValue<String> DEFAULT_SKILL_2;
@@ -33,6 +39,15 @@ public final class ClientUiConfig {
         SKILL_HUD_Y = builder.defineInRange("skill_hud_y", 180, 0, 10000);
         SHOW_COOLDOWN_NUMBERS = builder.define("show_cooldown_numbers", true);
         SHOW_RESOURCE_BARS = builder.define("show_resource_bars", true);
+        builder.pop();
+
+        builder.push("chat");
+        ENABLE_CUSTOM_CHAT = builder.define("enable_custom_chat", true);
+        HIDE_VANILLA_CHAT = builder.define("hide_vanilla_chat", true);
+        CHAT_X = builder.defineInRange("chat_x", 8, 0, 10000);
+        CHAT_Y = builder.defineInRange("chat_y", 70, 0, 10000);
+        CHAT_WIDTH = builder.defineInRange("chat_width", 330, 120, 1000);
+        CHAT_LINES = builder.defineInRange("chat_lines", 7, 1, 20);
         builder.pop();
 
         builder.push("keybinds");

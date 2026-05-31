@@ -1,0 +1,6 @@
+{
+  "id": "ranger",
+  "name": "Ranger",
+  "tier": 1,
+  "parent": "tctorpg:gunslinger"
+}

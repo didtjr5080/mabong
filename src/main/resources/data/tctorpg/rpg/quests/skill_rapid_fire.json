@@ -1,0 +1,1 @@
+{"id":"skill_rapid_fire","name":"Rapid Fire Training","type":"skill","rewards":[{"type":"exp","amount":50},{"type":"skill","skill_id":"rapid_fire"}],"repeatable":false}

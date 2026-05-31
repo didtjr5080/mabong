@@ -1,0 +1,15 @@
+{
+  "id": "rapid_fire",
+  "name": "Rapid Fire",
+  "job_required": "tctorpg:gunslinger",
+  "level_required": 3,
+  "tier_required": 0,
+  "slot_type": "normal",
+  "cooldown_ticks": 90,
+  "resource": { "type": "stamina", "cost": 12 },
+  "damage": { "type": "physical", "base": 35, "scale": { "attack": 1.0, "magic": 0.0 } },
+  "range": 8.0,
+  "radius": 0.5,
+  "effects": [],
+  "visual": { "particle": "minecraft:crit", "sound": "minecraft:entity.firework_rocket.blast" }
+}

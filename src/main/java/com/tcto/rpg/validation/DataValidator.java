@@ -49,9 +49,43 @@ public class DataValidator {
             result.error(relative, "Invalid JSON: " + ex.getMessage());
             return;
         }
+        if (isExpTable(relative)) {
+            validateExpTable(json, relative, result);
+            return;
+        }
         require(json, "id", relative, result);
         validateNumericRanges(json, relative, result);
         references.accept(relative, json);
+    }
+
+    private static boolean isExpTable(String relative) {
+        return relative.equals("exp_table.json") || relative.endsWith("/exp_table.json");
+    }
+
+    private static void validateExpTable(JsonObject json, String file, ValidationResult result) {
+        if (json.isEmpty()) {
+            result.error(file, "exp_table cannot be empty.");
+            return;
+        }
+
+        for (String level : json.keySet()) {
+            try {
+                int parsedLevel = Integer.parseInt(level);
+                if (parsedLevel < 1) {
+                    result.error(file, "level key must be at least 1: " + level);
+                }
+            } catch (NumberFormatException ex) {
+                result.error(file, "level key must be an integer: " + level);
+            }
+
+            try {
+                if (!json.get(level).isJsonPrimitive() || json.get(level).getAsInt() < 0) {
+                    result.error(file, "required exp must be a non-negative integer for level " + level);
+                }
+            } catch (Exception ex) {
+                result.error(file, "required exp must be a non-negative integer for level " + level);
+            }
+        }
     }
 
     private static void require(JsonObject json, String key, String file, ValidationResult result) {

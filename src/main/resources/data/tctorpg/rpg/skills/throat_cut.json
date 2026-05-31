@@ -1,0 +1,15 @@
+{
+  "id": "throat_cut",
+  "name": "Throat Cut",
+  "job_required": "tctorpg:rogue",
+  "level_required": 5,
+  "tier_required": 0,
+  "slot_type": "normal",
+  "cooldown_ticks": 100,
+  "resource": { "type": "stamina", "cost": 14 },
+  "damage": { "type": "physical", "base": 50, "scale": { "attack": 1.5, "magic": 0.0 } },
+  "range": 2.5,
+  "radius": 0.0,
+  "effects": [{ "id": "bleed", "duration_ticks": 120, "amplifier": 1 }],
+  "visual": { "particle": "minecraft:sweep_attack", "sound": "minecraft:entity.player.attack.crit" }
+}

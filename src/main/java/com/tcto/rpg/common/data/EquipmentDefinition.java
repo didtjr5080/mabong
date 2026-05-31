@@ -9,6 +9,7 @@ import java.util.Set;
 
 public class EquipmentDefinition {
     private final String id;
+    private final String name;
     private final String slot;
     private final int levelRequired;
     private final int tierRequired;
@@ -16,9 +17,10 @@ public class EquipmentDefinition {
     private final Map<String, Integer> statRequirements;
     private final Map<String, Integer> stats;
 
-    public EquipmentDefinition(String id, String slot, int levelRequired, int tierRequired,
+    public EquipmentDefinition(String id, String name, String slot, int levelRequired, int tierRequired,
                                Set<String> allowedJobs, Map<String, Integer> statRequirements, Map<String, Integer> stats) {
         this.id = id;
+        this.name = name;
         this.slot = slot;
         this.levelRequired = levelRequired;
         this.tierRequired = tierRequired;
@@ -28,6 +30,7 @@ public class EquipmentDefinition {
     }
 
     public static EquipmentDefinition fromJson(String id, JsonObject json) {
+        String name = json.has("name") ? json.get("name").getAsString() : id;
         String slot = json.has("slot") ? json.get("slot").getAsString() : "weapon";
         int level = 0;
         int tier = 0;
@@ -54,11 +57,15 @@ public class EquipmentDefinition {
                 stats.put(key, statObj.get(key).getAsInt());
             }
         }
-        return new EquipmentDefinition(id, slot, level, tier, allowedJobs, reqStats, stats);
+        return new EquipmentDefinition(id, name, slot, level, tier, allowedJobs, reqStats, stats);
     }
 
     public String id() {
         return id;
+    }
+
+    public String name() {
+        return name;
     }
 
     public String slot() {

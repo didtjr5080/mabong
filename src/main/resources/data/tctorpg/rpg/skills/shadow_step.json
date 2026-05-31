@@ -1,0 +1,15 @@
+{
+  "id": "shadow_step",
+  "name": "Shadow Step",
+  "job_required": "tctorpg:shadow_lord",
+  "level_required": 30,
+  "tier_required": 2,
+  "slot_type": "ultimate",
+  "cooldown_ticks": 500,
+  "resource": { "type": "stamina", "cost": 30 },
+  "damage": { "type": "physical", "base": 105, "scale": { "attack": 2.2, "magic": 0.0 } },
+  "range": 6.0,
+  "radius": 1.5,
+  "effects": [{ "id": "stealth", "duration_ticks": 80, "amplifier": 1 }],
+  "visual": { "particle": "minecraft:portal", "sound": "minecraft:entity.enderman.teleport" }
+}

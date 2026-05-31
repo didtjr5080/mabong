@@ -1,0 +1,6 @@
+{
+  "id": "gun_technician",
+  "name": "Gun Technician",
+  "tier": 2,
+  "parent": "tctorpg:ranger"
+}

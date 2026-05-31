@@ -1,0 +1,6 @@
+{
+  "id": "paladin",
+  "name": "Paladin",
+  "tier": 2,
+  "parent": "tctorpg:knight"
+}

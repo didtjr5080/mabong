@@ -19,6 +19,7 @@ public final class RpgHudOverlay {
         QuestTrackerHudRenderer.render(guiGraphics);
         BossHudRenderer.render(guiGraphics);
         FloatingDamageRenderer.render(guiGraphics);
+        CustomChatHud.render(guiGraphics);
     }
 }
 

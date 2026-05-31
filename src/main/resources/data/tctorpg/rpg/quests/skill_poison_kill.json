@@ -1,0 +1,1 @@
+{"id":"skill_poison_kill","name":"Poison Kill Trial","type":"skill","rewards":[{"type":"exp","amount":400},{"type":"skill","skill_id":"poison_kill"}],"repeatable":false}

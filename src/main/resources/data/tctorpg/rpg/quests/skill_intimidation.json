@@ -1,0 +1,1 @@
+{"id":"skill_intimidation","name":"Intimidation Training","type":"skill","rewards":[{"type":"exp","amount":150},{"type":"skill","skill_id":"intimidation"}],"repeatable":false}

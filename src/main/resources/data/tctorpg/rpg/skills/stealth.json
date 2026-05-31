@@ -1,0 +1,15 @@
+{
+  "id": "stealth",
+  "name": "Stealth",
+  "job_required": "tctorpg:rogue",
+  "level_required": 3,
+  "tier_required": 0,
+  "slot_type": "normal",
+  "cooldown_ticks": 260,
+  "resource": { "type": "stamina", "cost": 18 },
+  "damage": { "type": "utility", "base": 0, "scale": { "attack": 0.0, "magic": 0.0 } },
+  "range": 0.0,
+  "radius": 0.0,
+  "effects": [{ "id": "stealth", "duration_ticks": 160, "amplifier": 1 }],
+  "visual": { "particle": "minecraft:smoke", "sound": "minecraft:entity.enderman.teleport" }
+}

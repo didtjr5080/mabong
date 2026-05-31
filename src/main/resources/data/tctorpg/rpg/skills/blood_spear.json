@@ -1,0 +1,15 @@
+{
+  "id": "blood_spear",
+  "name": "Blood Spear",
+  "job_required": "tctorpg:blood_mage",
+  "level_required": 5,
+  "tier_required": 0,
+  "slot_type": "normal",
+  "cooldown_ticks": 110,
+  "resource": { "type": "mana", "cost": 18 },
+  "damage": { "type": "magic", "base": 55, "scale": { "attack": 0.0, "magic": 1.5 } },
+  "range": 7.0,
+  "radius": 0.8,
+  "effects": [{ "id": "bleed", "duration_ticks": 100, "amplifier": 1 }],
+  "visual": { "particle": "minecraft:damage_indicator", "sound": "minecraft:entity.witch.throw" }
+}

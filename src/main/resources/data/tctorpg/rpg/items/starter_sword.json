@@ -1,0 +1,18 @@
+{
+  "id": "starter_sword",
+  "name": "Starter Sword",
+  "type": "equipment",
+  "slot": "weapon",
+  "weapon_type": "sword",
+  "rarity": "common",
+  "requirements": {
+    "level": 1,
+    "jobs": [],
+    "tier": 0,
+    "stats": {}
+  },
+  "stats": {
+    "physical_attack": 4
+  },
+  "effects": []
+}

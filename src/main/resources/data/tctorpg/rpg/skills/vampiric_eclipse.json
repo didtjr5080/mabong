@@ -1,0 +1,15 @@
+{
+  "id": "vampiric_eclipse",
+  "name": "Vampiric Eclipse",
+  "job_required": "tctorpg:vampire_mage",
+  "level_required": 30,
+  "tier_required": 2,
+  "slot_type": "ultimate",
+  "cooldown_ticks": 580,
+  "resource": { "type": "mana", "cost": 42 },
+  "damage": { "type": "magic", "base": 135, "scale": { "attack": 0.2, "magic": 2.0 } },
+  "range": 6.0,
+  "radius": 3.0,
+  "effects": [{ "id": "bleed", "duration_ticks": 140, "amplifier": 1 }],
+  "visual": { "particle": "minecraft:witch", "sound": "minecraft:entity.evoker.cast_spell" }
+}

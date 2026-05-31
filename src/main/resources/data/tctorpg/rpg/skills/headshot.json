@@ -1,0 +1,15 @@
+{
+  "id": "headshot",
+  "name": "Headshot",
+  "job_required": "tctorpg:sniper",
+  "level_required": 30,
+  "tier_required": 2,
+  "slot_type": "ultimate",
+  "cooldown_ticks": 520,
+  "resource": { "type": "stamina", "cost": 32 },
+  "damage": { "type": "physical", "base": 160, "scale": { "attack": 2.5, "magic": 0.0 } },
+  "range": 12.0,
+  "radius": 0.5,
+  "effects": [],
+  "visual": { "particle": "minecraft:crit", "sound": "minecraft:entity.generic.explode" }
+}

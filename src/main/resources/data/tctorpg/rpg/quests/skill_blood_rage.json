@@ -1,0 +1,1 @@
+{"id":"skill_blood_rage","name":"Blood Rage Trial","type":"skill","rewards":[{"type":"exp","amount":450},{"type":"skill","skill_id":"blood_rage"}],"repeatable":false}

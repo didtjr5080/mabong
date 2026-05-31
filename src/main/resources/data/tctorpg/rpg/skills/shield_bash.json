@@ -1,0 +1,15 @@
+{
+  "id": "shield_bash",
+  "name": "Shield Bash",
+  "job_required": "tctorpg:knight",
+  "level_required": 15,
+  "tier_required": 1,
+  "slot_type": "normal",
+  "cooldown_ticks": 120,
+  "resource": { "type": "stamina", "cost": 14 },
+  "damage": { "type": "physical", "base": 45, "scale": { "attack": 0.8, "magic": 0.0 } },
+  "range": 2.5,
+  "radius": 0.8,
+  "effects": [{ "id": "stun", "duration_ticks": 40, "amplifier": 1 }],
+  "visual": { "particle": "minecraft:explosion", "sound": "minecraft:item.shield.block" }
+}

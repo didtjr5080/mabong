@@ -1,0 +1,1 @@
+{"id":"skill_sword_judgement","name":"Sword Judgement Training","type":"skill","rewards":[{"type":"exp","amount":50},{"type":"skill","skill_id":"sword_judgement"}],"repeatable":false}

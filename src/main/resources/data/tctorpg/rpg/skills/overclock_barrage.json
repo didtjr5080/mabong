@@ -1,0 +1,15 @@
+{
+  "id": "overclock_barrage",
+  "name": "Overclock Barrage",
+  "job_required": "tctorpg:gun_technician",
+  "level_required": 30,
+  "tier_required": 2,
+  "slot_type": "ultimate",
+  "cooldown_ticks": 540,
+  "resource": { "type": "stamina", "cost": 38 },
+  "damage": { "type": "physical", "base": 120, "scale": { "attack": 1.9, "magic": 0.2 } },
+  "range": 8.0,
+  "radius": 2.0,
+  "effects": [{ "id": "slow", "duration_ticks": 80, "amplifier": 1 }],
+  "visual": { "particle": "minecraft:crit", "sound": "minecraft:entity.firework_rocket.blast" }
+}
